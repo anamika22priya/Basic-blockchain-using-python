@@ -24,11 +24,11 @@ class Blockchain:
 
 my_blockchain=Blockchain() #create the block chain wiht genesis block
 
-my_blockchain.add_block("Data 1")
+my_blockchain.add_block("Data 1") #create new blocks to be added to the blockchain 
 my_blockchain.add_block("Data 2")
 my_blockchain.add_block("Data 3")
 
-for block in my_blockchain.chain:
+for block in my_blockchain.chain: #print the all blocks attributes of the blocks in the blockchain
     print("Timestamp:", block.timestamp)
     print("Data:", block.data)
     print("Previous Hash:", block.previous_hash)
